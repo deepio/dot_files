@@ -41,12 +41,12 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Development
 alias makeenv="python3 -m venv env"
 alias workon=". ./env/bin/activate"
-alias black"black ./ --exclude ./env"
+alias black="black ./ --exclude ./env"
 # Open chrome as auto-console-debug when starting from command line.
 alias chrome="open -a 'Google Chrome' --args --auto-open-devtools-for-tabs"
 # Start docker toolbox.
 alias start.dt="bash --login ‘/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh’"
 # Docker commands
-alias stop.docker="docker stop $(docker ps -aq)"
-alias rm.docker="docker rm $(docker ps -aq)"
-alias rmi.docker="docker rmi $(docker image ls -q)"
+alias stop.docker="bash -c 'docker stop $(docker ps -aq)'"
+alias rm.docker="bash -c 'docker rm $(docker ps -aq)'"
+alias rmi.docker="bash -c 'docker rmi $(docker image ls -q)'"
