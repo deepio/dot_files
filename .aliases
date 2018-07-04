@@ -43,6 +43,6 @@ alias makeenv="python3 -m venv env"
 alias workon=". ./env/bin/activate"
 alias black="black ./ --exclude ./env"
 # Open chrome as auto-console-debug when starting from command line.
-alias chrome="open -a 'Google Chrome' --args --auto-open-devtools-for-tabs"
+alias chrome="open -na 'Google Chrome' --args --auto-open-devtools-for-tabs"
 # Start docker toolbox.
 alias start.dt="bash --login ‘/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh’"
