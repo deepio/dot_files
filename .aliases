@@ -46,7 +46,3 @@ alias black="black ./ --exclude ./env"
 alias chrome="open -a 'Google Chrome' --args --auto-open-devtools-for-tabs"
 # Start docker toolbox.
 alias start.dt="bash --login ‘/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh’"
-# Docker commands
-alias stop.docker="bash -c 'docker stop $(docker ps -aq)'"
-alias rm.docker="bash -c 'docker rm $(docker ps -aq)'"
-alias rmi.docker="bash -c 'docker rmi $(docker image ls -q)'"
