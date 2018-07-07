@@ -26,7 +26,7 @@ alias la="ls -Foh"
 alias lt="ls -to"
 
 # Public IP addresses
-alias ip="curl https://ipinfo.io/ip"
+alias ip="curl -v https://ipinfo.io/ip"
 # [TODO] Add a little something to check the current network interface,
 # instead of hardcoding the `en0`.
 alias localip="ipconfig getifaddr en0"
@@ -41,7 +41,8 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Development
 alias makeenv="python3 -m venv env"
 alias workon=". ./env/bin/activate"
-alias black="black ./ --exclude ./env"
+alias black="black --exclude env/"
+alias 2to3="2to3 -nw"
 # Open chrome as auto-console-debug when starting from command line.
 alias chrome="open -na 'Google Chrome' --args --auto-open-devtools-for-tabs"
 # Start docker toolbox.
