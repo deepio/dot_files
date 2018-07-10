@@ -5,7 +5,7 @@ function stopdocker() {
 }
 
 function killdocker() {
-  echo 'This is the master obliterator.'
+  echo 'This is the master obliterator.';
   docker stop $(docker ps -aq);
   docker rm $(docker ps -aq);
   docker rmi $(docker image ls -q);
