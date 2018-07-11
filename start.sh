@@ -17,7 +17,7 @@ brew cask install vlc keka
 sudo chown -R $(whoami) /usr/local/lib/pkgconfig
 brew install python@3 python@2 netcat
 
-# Needed in Mac Sierra
+# Needed in Mac Sierra.
 brew install coreutils
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 sudo ln -s /usr/local/bin/gsha512sum /usr/local/bin/sha512sum
