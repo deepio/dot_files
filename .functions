@@ -1,14 +1,14 @@
 #!/bin/sh
 
 function stopdocker() {
-  docker stop $(docker ps -aq);
+  docker stop $(docker ps -aq)
 }
 
 function killdocker() {
-  echo 'This is the master obliterator.';
-  docker stop $(docker ps -aq);
-  docker rm $(docker ps -aq);
-  docker rmi $(docker image ls -q);
-  docker volume rm $(docker volume ls -q);
+  echo 'This is the master obliterator.'
+  docker stop $(docker ps -aq)
+  docker rm $(docker ps -aq)
+  docker rmi $(docker image ls -q)
+  docker volume rm $(docker volume ls -q)
   docker network rm $(docker network ls -q)
 }
