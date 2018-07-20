@@ -45,5 +45,3 @@ alias black="black --exclude env/"
 alias 2to3="2to3 -nw"
 # Open chrome as auto-console-debug when starting from command line.
 alias chrome="open -na 'Google Chrome' --args --auto-open-devtools-for-tabs"
-# Start docker toolbox.
-alias start.dt="bash --login ‘/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh’"
