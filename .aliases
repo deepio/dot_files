@@ -43,5 +43,6 @@ alias makeenv="python3 -m venv env"
 alias workon=". ./env/bin/activate"
 alias black="black --exclude env/"
 alias 2to3="2to3 -nw"
+alias kali="docker run -it kalilinux/kali-linux-docker /bin/bash"
 # Open chrome as auto-console-debug when starting from command line.
 alias chrome="open -na 'Google Chrome' --args --auto-open-devtools-for-tabs"

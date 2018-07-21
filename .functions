@@ -1,4 +1,7 @@
 #!/bin/sh
+function cleanpip() {
+  pip freeze | xargs pip uninstall -y
+}
 
 function startdt() {
   bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
@@ -9,12 +12,13 @@ function stopdocker() {
 }
 
 function killdocker() {
-  echo 'This is the master obliterator.'
+  echo 'This is the Docker Master Obliterator ;)'
   docker stop $(docker ps -aq)
   docker rm $(docker ps -aq)
   docker rmi $(docker image ls -q)
   docker volume rm $(docker volume ls -q)
   docker network rm $(docker network ls -q)
+  echo 'Done'
 }
 
 function http2ssh() {
