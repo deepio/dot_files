@@ -11,4 +11,4 @@ cp ./.aliases ~/ && cp ./.bash_* ~/ && cp ./.functions ~/
 
 # Update all brew packages, and cleanup old versions.
 brew upgrade
-brew cleanup -n
+brew cleanup

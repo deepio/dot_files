@@ -1,21 +1,28 @@
 #!/bin/sh
 
+# 
+xcode-select --install
+
 # Install Homebrew.
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update
 
 # Install Browsers.
-brew cask install FireFox google-chrome
+brew cask install FireFox
+brew cask install google-chrome
 
 # Install Dev apps.
-brew cask install atom github-desktop docker git
+brew cask install atom
+brew cask install docker
 
 # Install Misc.
-brew cask install vlc keka
+brew cask install vlc
+brew cask install keka
 
 # Install Tools.
 sudo chown -R $(whoami) /usr/local/lib/pkgconfig
-brew install python@3 python@2 netcat
+brew install python@3
+brew install python@2
+brew install netcat
 
 # Needed in Mac Sierra.
 brew install coreutils
