@@ -18,7 +18,10 @@ function killdocker() {
   docker rmi $(docker image ls -q)
   docker volume rm $(docker volume ls -q)
   docker network rm $(docker network ls -q)
-  echo 'Done'
+  echo 'Done.'
+  echo 'Rebuilding image.'
+  docker-compose build
+  echo 'Finished!'
 }
 
 function http2ssh() {
