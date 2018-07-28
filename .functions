@@ -13,11 +13,13 @@ function stopdocker() {
 
 function killdocker() {
   echo 'This is the Docker Master Obliterator ;)'
-  docker stop $(docker ps -aq)
-  docker rm $(docker ps -aq)
-  docker rmi $(docker image ls -q)
-  docker volume rm $(docker volume ls -q)
-  docker network rm $(docker network ls -q)
+  {
+    docker stop $(docker ps -aq)
+    docker rm $(docker ps -aq)
+    docker rmi $(docker image ls -q)
+    docker volume rm $(docker volume ls -q)
+    docker network rm $(docker network ls -q)
+  } &> /dev/null
   echo 'Done.'
   echo 'Rebuilding image.'
   docker-compose build
