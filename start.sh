@@ -23,7 +23,6 @@ sudo chown -R $(whoami) /usr/local/lib/pkgconfig
 brew install python@3
 brew install python@2
 brew install netcat
-# Because mac verion of xargs and sed is god awful.
 brew install findutils
 brew install gnu-sed
 
@@ -32,7 +31,7 @@ brew install coreutils
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 sudo ln -s /usr/local/bin/gsha512sum /usr/local/bin/sha512sum
 
-# Stop Safari notifications. (COME ON APPLE! REALLY?!)
+# Stop Safari notifications.
 defaults write com.apple.coreservices.uiagent CSUIHasSafariBeenLaunched -bool YES
 defaults write com.apple.coreservices.uiagent CSUIRecommendSafariNextNotificationDate -date 2050-01-01T00:00:00Z
 defaults write com.apple.coreservices.uiagent CSUILastOSVersionWhereSafariRecommendationWasMade -float 10.99
