@@ -14,10 +14,10 @@ function stopdocker() {
 function killdocker() {
   echo 'This is the Docker Master Obliterator ;)'
   {
-    docker stop $(docker ps -aq)
-    docker rm $(docker ps -aq)
-    docker rmi $(docker image ls -q)
-    docker volume rm $(docker volume ls -q)
+    docker stop --time 1 $(docker ps -aq)
+    docker rm --force $(docker ps -aq)
+    docker rmi --force $(docker image ls -q)
+    docker volume rm --force $(docker volume ls -q)
     docker network rm $(docker network ls -q)
   } &> /dev/null
   echo 'Done.'
