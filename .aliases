@@ -45,5 +45,6 @@ alias workon=". ./env/bin/activate"
 alias black="black --exclude env/"
 alias 2to3="2to3 -nw"
 alias kali="docker run -it kalilinux/kali-linux-docker /bin/bash"
+alias centos="docker run -p 5901:5901 -p 6901:6901 consol/centos-xfce-vnc"
 # Open chrome as auto-console-debug when starting from command line.
 alias chrome="open -na 'Google Chrome' --args --auto-open-devtools-for-tabs"
