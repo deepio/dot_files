@@ -13,7 +13,7 @@ fi
 alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
-alias _code="cd ~/Documents/GitHub"
+alias code="cd ~/Documents/GitHub"
 
 # Always use color output for `ls`
 # -A lists everything but . and ..
@@ -27,9 +27,7 @@ alias lt="ls -to"
 
 # Public IP addresses
 alias ip="curl -v https://ipinfo.io/ip"
-# [TODO] Add a little something to check the current network interface,
-# instead of hardcoding the `en0`.
-alias localip="ipconfig getifaddr en0"
+alias localip="echo $(ipconfig getifaddr $(networksetup -listallhardwareports | awk '/Hardware Port: Wi-Fi/{getline; print $2}'))"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
