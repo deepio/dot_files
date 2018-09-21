@@ -27,6 +27,7 @@ brew install findutils
 brew install gnu-sed
 brew install openssl
 brew install autoconf
+brew install curl --with-openssl
 
 # Needed in Mac Sierra.
 brew install coreutils
