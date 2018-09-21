@@ -26,6 +26,7 @@ brew install netcat
 brew install findutils
 brew install gnu-sed
 brew install openssl
+brew install autoconf
 
 # Needed in Mac Sierra.
 brew install coreutils
