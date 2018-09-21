@@ -25,6 +25,7 @@ brew install python@2
 brew install netcat
 brew install findutils
 brew install gnu-sed
+brew install openssl
 
 # Needed in Mac Sierra.
 brew install coreutils
