@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#
+# Installs git, clang, ...
 xcode-select --install
 
 # Install Homebrew.
@@ -22,6 +22,7 @@ brew cask install keka
 sudo chown -R $(whoami) /usr/local/lib/pkgconfig
 brew install python@3
 brew install python@2
+pip install virtualenv
 brew install netcat
 brew install findutils
 brew install gnu-sed
