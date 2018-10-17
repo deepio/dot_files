@@ -25,10 +25,13 @@ brew install python@2
 pip install virtualenv
 brew install netcat
 brew install findutils
+brew install binutils
 brew install gnu-sed
 brew install openssl
 brew install autoconf
 brew install curl --with-openssl
+cd ~/Documents/GitHub/
+git clone git@github.com:slimm609/checksec.sh.git
 
 # Needed in Mac Sierra.
 brew install coreutils
