@@ -13,6 +13,8 @@ fi
 alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 alias code="cd ~/Documents/GitHub"
 
 # Always use color output for `ls`
