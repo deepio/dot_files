@@ -29,6 +29,7 @@ brew install binutils
 brew install gnu-sed
 brew install openssl
 brew install autoconf
+brew install pstree
 brew install pypy3
 brew install curl --with-openssl
 cd ~/Documents/GitHub/
