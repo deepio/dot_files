@@ -7,6 +7,16 @@ function pidof() {
   ps -A | grep -m1 "$@" | awk '{print $1}'
 }
 
+function run() {
+  while true
+    do sleep 2 &&
+    DATE=`date '+%b-%d %H:%M:%S'`
+    echo ''
+    echo 'Updated: ' $DATE
+    python main.py
+  done
+}
+
 function startdt() {
   bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
 }
