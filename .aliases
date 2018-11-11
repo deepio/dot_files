@@ -48,6 +48,7 @@ alias black="black --exclude env/"
 alias rsync="rsync --exclude=.DS_Store --exclude=env -vaP"
 alias 2to3="2to3 -nw"
 alias wgetall="wget -r -np -R 'index.html*'"
+alias validate="codesign -vvvv -R='anchor apple'"
 # Open chrome as auto-console-debug when starting from command line.
 alias chrome="open -na 'Google Chrome' --args --auto-open-devtools-for-tabs"
 # Only for mac
