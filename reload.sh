@@ -8,7 +8,6 @@ cp ./.aliases ~/ && cp ./.bash_* ~/ && cp ./.functions ~/ && cp ./.vimrc ~/ && c
 . ~/.bash_prompt
 . ~/.bash_profile
 . ~/.functions
-. ~/.vimrc
 
 # Update all brew packages, and cleanup old versions.
 brew upgrade
