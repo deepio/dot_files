@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Copy files over.
-cp ./.aliases ~/ && cp ./.bash_* ~/ && cp ./.functions ~/ && cp ./.vimrc ~/
+cp ./.aliases ~/ && cp ./.bash_* ~/ && cp ./.functions ~/ && cp ./.vimrc ~/ && cp ./.gdbinit ~/
 
 # Refresh the settings.
 . ~/.aliases
