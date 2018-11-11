@@ -35,6 +35,7 @@ brew install pypy3
 brew install curl --with-openssl
 cd ~/Documents/GitHub/
 git clone git@github.com:slimm609/checksec.sh.git
+git clone https://github.com/longld/peda.git ~/peda
 
 # Needed in Mac Sierra.
 brew install coreutils
