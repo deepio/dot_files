@@ -3,6 +3,10 @@ function cleanpip() {
   pip freeze | xargs pip uninstall -y
 }
 
+function pidof() {
+  ps -A | grep -m1 "$@" | awk '{print $1}'
+}
+
 function startdt() {
   bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
 }
