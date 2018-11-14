@@ -33,6 +33,7 @@ brew install pygobject3
 brew install pstree
 brew install pypy3
 brew install curl --with-openssl
+brew install wget
 cd ~/Documents/GitHub/
 git clone git@github.com:slimm609/checksec.sh.git
 git clone https://github.com/longld/peda.git ~/peda
