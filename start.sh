@@ -20,6 +20,7 @@ brew cask install keka
 
 # Install Tools.
 sudo chown -R $(whoami) /usr/local/lib/pkgconfig
+brew install openvpn
 brew install python@3
 brew install python@2
 pip install virtualenv
