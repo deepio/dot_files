@@ -4,7 +4,7 @@ function cleanpip() {
 }
 
 function pidof() {
-  ps -A | grep -m1 "$@" | awk '{print $1}'
+  ps -A | grep -i "$@" | awk '{print $1}'
 }
 
 function run() {
