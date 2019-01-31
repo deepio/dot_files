@@ -3,6 +3,9 @@
 # Copy files over.
 cp ./.aliases ~/ && cp ./.bash_* ~/ && cp ./.functions ~/ && cp ./.vimrc ~/ && cp ./.gdbinit ~/
 
+# Copy atom keymaps
+cp ./keymap.cson ~/.atom/
+
 # Refresh the settings.
 . ~/.aliases
 . ~/.bash_prompt
@@ -11,4 +14,4 @@ cp ./.aliases ~/ && cp ./.bash_* ~/ && cp ./.functions ~/ && cp ./.vimrc ~/ && c
 
 # Update all brew packages, and cleanup old versions.
 brew upgrade
-brew cleanup
+# brew cleanup
