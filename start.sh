@@ -19,7 +19,7 @@ brew cask install vlc
 brew cask install keka
 
 # Install Tools.
-sudo chown -R $(whoami) /usr/local/lib/pkgconfig
+sudo chown -R "$(whoami)" /usr/local/lib/pkgconfig
 brew install openvpn
 brew install python@3
 brew install python@2
@@ -35,7 +35,7 @@ brew install pstree
 brew install pypy3
 brew install curl --with-openssl
 brew install wget
-cd ~/Documents/GitHub/
+cd ~/Documents/GitHub/ || return
 git clone git@github.com:slimm609/checksec.sh.git
 git clone https://github.com/longld/peda.git ~/peda
 
