@@ -28,7 +28,7 @@ alias la="ls -Foh"
 alias lt="ls -to"
 
 # Public IP addresses
-alias ip="curl -v https://ipinfo.io/ip"
+alias publicip="curl -v https://ipinfo.io/ip"
 alias localip="echo $(ipconfig getifaddr $(networksetup -listallhardwareports | awk '/Hardware Port: Wi-Fi/{getline; print $2}'))"
 
 # Print each PATH entry on a separate line
