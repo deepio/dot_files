@@ -8,6 +8,9 @@ function pidof() {
 }
 
 function run() {
+  # Phasing out run in favor of entr.
+  # EG:
+  #   ls *.go | entr sh -c "go build; ./nanny"
   while true
     do sleep 2 &&
     DATE=`date '+%b-%d %H:%M:%S'`
