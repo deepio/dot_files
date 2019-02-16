@@ -39,6 +39,8 @@ brew install wget
 cd ~/Documents/GitHub/ || return
 git clone git@github.com:slimm609/checksec.sh.git
 git clone https://github.com/longld/peda.git ~/peda
+git clone git@github.com:sdispater/poetry.git
+python3 ~/poetry/get-poetry.py
 
 # Needed in Mac Sierra.
 brew install coreutils
