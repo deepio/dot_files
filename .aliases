@@ -55,6 +55,7 @@ alias dockerip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddre
 alias chrome="open -na 'Google Chrome' --args --auto-open-devtools-for-tabs"
 # Only for mac
 alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"
+alias gitlog="git log --oneline --abbrev-commit --all --graph --decorate --color"
 
 # Docker
 alias kali="docker run -it kalilinux/kali-linux-docker /bin/bash"
