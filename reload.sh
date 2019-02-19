@@ -14,4 +14,3 @@ cp ./keymap.cson ~/.atom/
 
 # Update all brew packages, and cleanup old versions.
 brew upgrade
-# brew cleanup
