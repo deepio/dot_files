@@ -59,3 +59,6 @@ sudo gem install artii lolcat
 # Setup bash settings.
 chmod +x ./reload.sh
 ./reload.sh
+
+# HOMEBREW_NO_INSTALL_CLEANUP=1
+# HOMEBREW_NO_ANALYTICS=1
