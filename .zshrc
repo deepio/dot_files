@@ -6,6 +6,7 @@ export ZSH=/Users/${USER}/.oh-my-zsh
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH=$(brew --prefix openvpn)/sbin:$PATH
 export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$PATH:/Users/${USER}/Documents/GitHub/tools"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

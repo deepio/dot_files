@@ -7,6 +7,7 @@ export PATH="$HOME/bin:$PATH";
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH=$(brew --prefix openvpn)/sbin:$PATH
 export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$PATH:/Users/${USER}/Documents/GitHub/tools"
 # Stop homebrew autoupdate when installing a new package.
 # Just add a Cronjob.
 # [TODO] Just how fragile are the xml launchd scripts anyway?
