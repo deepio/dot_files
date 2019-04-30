@@ -2,12 +2,13 @@
 cd ~/Documents/GitHub
 
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+export PATH=$PATH:$HOME/.poetry/bin
+export PATH=$PATH:$HOME/Documents/GitHub/tools
+export PATH=$PATH:$(brew --prefix openvpn)/sbin
+export PATH=$PATH:/usr/local/opt/openssl/bin
+export PATH=$PATH:/usr/local/Cellar/openvpn/2.4.6/sbin
+export PATH=$PATH:/Applications/Wireshark.app/Contents/MacOS
 
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH=$(brew --prefix openvpn)/sbin:$PATH
-export PATH="$HOME/.poetry/bin:$PATH"
-export PATH="$PATH:/Users/${USER}/Documents/GitHub/tools"
 # Stop homebrew autoupdate when installing a new package.
 # Just add a Cronjob.
 # [TODO] Just how fragile are the xml launchd scripts anyway?

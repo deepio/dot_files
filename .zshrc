@@ -3,10 +3,12 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/${USER}/.oh-my-zsh
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH=$(brew --prefix openvpn)/sbin:$PATH
-export PATH="$HOME/.poetry/bin:$PATH"
-export PATH="$PATH:/Users/${USER}/Documents/GitHub/tools"
+export PATH=$PATH:$HOME/.poetry/bin
+export PATH=$PATH:$HOME/Documents/GitHub/tools
+export PATH=$PATH:$(brew --prefix openvpn)/sbin
+export PATH=$PATH:/usr/local/opt/openssl/bin
+export PATH=$PATH:/usr/local/Cellar/openvpn/2.4.6/sbin
+export PATH=$PATH:/Applications/Wireshark.app/Contents/MacOS
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
