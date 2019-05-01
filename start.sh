@@ -44,6 +44,8 @@ git clone git@github.com:longld/peda.git ~/peda
 git clone git@github.com:sdispater/poetry.git ~/poetry
 gsed -i "s/env python/env python3/g" ~/poetry/get-poetry.py
 python3 ~/poetry/get-poetry.py
+brew install git-lfs
+git lfs install --system
 
 # Needed in Mac Sierra.
 brew install coreutils
