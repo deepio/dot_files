@@ -10,6 +10,8 @@ export PATH=$PATH:$(brew --prefix openvpn)/sbin
 export PATH=$PATH:/usr/local/opt/openssl/bin
 export PATH=$PATH:/usr/local/Cellar/openvpn/2.4.6/sbin
 export PATH=$PATH:/Applications/Wireshark.app/Contents/MacOS
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

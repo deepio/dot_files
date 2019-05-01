@@ -9,6 +9,8 @@ export PATH=$PATH:/usr/local/opt/openssl/bin
 export PATH=$PATH:/usr/local/Cellar/openvpn/2.4.6/sbin
 export PATH=$PATH:/Applications/Wireshark.app/Contents/MacOS
 
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
 # Stop homebrew autoupdate when installing a new package.
 # Just add a Cronjob.
 # [TODO] Just how fragile are the xml launchd scripts anyway?
