@@ -4,6 +4,7 @@ cd ~/Documents/GitHub
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/${USER}/.oh-my-zsh
+export PATH=$PATH:/usr/local/bin:/$HOME/bin
 export PATH=$PATH:$HOME/.poetry/bin
 export PATH=$PATH:$HOME/Documents/GitHub/tools
 export PATH=$PATH:$(brew --prefix openvpn)/sbin
