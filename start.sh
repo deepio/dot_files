@@ -11,7 +11,6 @@ brew cask install FireFox
 brew cask install google-chrome
 
 # Install Dev apps.
-brew cask install atom
 brew cask install visual-studio-code
 brew cask install docker
 
