@@ -29,36 +29,17 @@ alias lt="ls -to"
 
 # Public IP addresses
 alias publicip="curl -v https://ipinfo.io/ip"
-alias localip="echo $(ipconfig getifaddr $(networksetup -listallhardwareports | awk '/Hardware Port: Wi-Fi/{getline; print $2}'))"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
 # Development
-alias d="deactivate"
 alias makeenv="python3 -m venv env"
 alias makeenv2="virtualenv env"
 alias makepypy="pypy3 -m venv env"
 alias mkdir="mkdir -vp"
 alias workon=". ./env/bin/activate"
-alias black="black --exclude env/"
 alias rsync="rsync --exclude=.DS_Store --exclude=env -vaP"
 alias 2to3="2to3 -nw"
 alias wgetall="wget -r -np -R 'index.html*'"
-alias reveal="codesign -vvvv -R='anchor apple'"
-alias verify="codesign -vvvv -dv"
 alias dockerip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
-# Open chrome as auto-console-debug when starting from command line.
-alias chrome="open -na 'Google Chrome' --args --auto-open-devtools-for-tabs"
-# Only for mac
-alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"
-alias gitlog="git log --oneline --abbrev-commit --all --graph --decorate --color"
-alias lldb="PATH=/usr/bin /usr/bin/lldb"
-
-# Docker
-alias kali="docker run -it kalilinux/kali-linux-docker /bin/bash"
-alias centos="docker run -p 5901:5901 -p 6901:6901 consol/centos-xfce-vnc"

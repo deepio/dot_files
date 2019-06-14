@@ -1,21 +1,3 @@
-# Always start from GH directory.
-cd ~/Documents/GitHub
-
-# Add `~/bin` to the `$PATH`
-export PATH=$PATH:$HOME/.poetry/bin
-export PATH=$PATH:$HOME/Documents/GitHub/tools
-export PATH=$PATH:$(brew --prefix openvpn)/sbin
-export PATH=$PATH:/usr/local/opt/openssl/bin
-export PATH=$PATH:/usr/local/Cellar/openvpn/2.4.6/sbin
-export PATH=$PATH:/Applications/Wireshark.app/Contents/MacOS
-
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
-# Stop homebrew autoupdate when installing a new package.
-# Just add a Cronjob.
-# [TODO] Just how fragile are the xml launchd scripts anyway?
-export HOMEBREW_NO_AUTO_UPDATE="1";
-
 # Ignore duplicate commands in the history
 export HISTCONTROL=ignoredups
 
@@ -54,13 +36,6 @@ shopt -s cdspell;
 for option in autocd globstar; do
 	shopt -s "$option" 2> /dev/null;
 done;
-
-# Add tab completion for many Bash commands
-if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
-	source "$(brew --prefix)/share/bash-completion/bash_completion";
-elif [ -f /etc/bash_completion ]; then
-	source /etc/bash_completion;
-fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
