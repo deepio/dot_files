@@ -15,7 +15,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias code="cd ~/Documents/GitHub"
+alias work="cd ~/Documents/GitHub"
 
 # Always use color output for `ls`
 # -A lists everything but . and ..
@@ -55,7 +55,6 @@ alias dockerip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddre
 # Open chrome as auto-console-debug when starting from command line.
 alias chrome="open -na 'Google Chrome' --args --auto-open-devtools-for-tabs"
 # Only for mac
-alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox"
 alias gitlog="git log --oneline --abbrev-commit --all --graph --decorate --color"
 alias lldb="PATH=/usr/bin /usr/bin/lldb"
 
