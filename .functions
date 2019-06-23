@@ -1,4 +1,8 @@
 #!/bin/sh
+function cleanmeta() {
+  xattr -c * && exiftool -all= * && rm *_original
+}
+
 function cleanpip() {
   pip freeze | xargs pip uninstall -y
 }
