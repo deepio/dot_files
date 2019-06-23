@@ -22,10 +22,6 @@ function startdt() {
   bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
 }
 
-function stopdocker() {
-  docker stop $(docker ps -aq)
-}
-
 function killdocker() {
   echo 'This is the Docker Master Obliterator ;)'
   {
