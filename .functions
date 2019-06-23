@@ -7,33 +7,6 @@ function cleanpip() {
   pip freeze | xargs pip uninstall -y
 }
 
-function pidof() {
-  ps -A | grep -i "$@" | awk '{print $1}'
-}
-
-function runpy() {
-  # Phasing out run in favor of entr.
-  # EG:
-  #   ls *.go | entr sh -c "go build; ./nanny"
-  ag -g "$@" | entr bash -c "clear && python '$@'"
-}
-
-function startdt() {
-  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
-}
-
-function killdocker() {
-  echo 'This is the Docker Master Obliterator ;)'
-  {
-    docker stop --time 1 $(docker ps -aq)
-    docker rm --force $(docker ps -aq)
-    docker rmi --force $(docker image ls -q)
-    docker volume rm --force $(docker volume ls -q)
-    docker network rm $(docker network ls -q)
-  } &> /dev/null
-  echo 'Done.'
-}
-
 function http2ssh() {
   REPO_URL=`git remote -v |  awk '{print $2; exit}'`;
   GIT_USER=${REPO_URL#*com/}; GIT_USER=${GIT_USER%%/*}
@@ -65,4 +38,31 @@ function http2ssh() {
   git remote set-url origin `echo $NEW_URL`
 
   echo "Success"
+}
+
+function killdocker() {
+  echo 'This is the Docker Master Obliterator ;)'
+  {
+    docker stop --time 1 $(docker ps -aq)
+    docker rm --force $(docker ps -aq)
+    docker rmi --force $(docker image ls -q)
+    docker volume rm --force $(docker volume ls -q)
+    docker network rm $(docker network ls -q)
+  } &> /dev/null
+  echo 'Done.'
+}
+
+function pidof() {
+  ps -A | grep -i "$@" | awk '{print $1}'
+}
+
+function runpy() {
+  # Phasing out run in favor of entr.
+  # EG:
+  #   ls *.go | entr sh -c "go build; ./nanny"
+  ag -g "$@" | entr bash -c "clear && python '$@'"
+}
+
+function startdt() {
+  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
 }
