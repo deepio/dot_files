@@ -1,6 +1,3 @@
-# Always start from GH directory.
-cd ~/Documents/GitHub
-
 # Add `~/bin` to the `$PATH`
 export PATH=$PATH:$HOME/.poetry/bin
 export PATH=$PATH:$HOME/Documents/GitHub/tools
