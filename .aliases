@@ -59,5 +59,4 @@ alias gitlog="git log --oneline --abbrev-commit --all --graph --decorate --color
 alias lldb="PATH=/usr/bin /usr/bin/lldb"
 
 # Docker
-# alias kali="docker run --rm -v `echo $PWD`:/pwd --privileged -it d33pi0/kali:latest"
 alias centos="docker run -p 5901:5901 -p 6901:6901 consol/centos-xfce-vnc"

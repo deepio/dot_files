@@ -41,7 +41,7 @@ function http2ssh() {
 }
 
 function kali() {
-  docker run --rm -v `pwd`:/pwd --privileged -it d33pi0/kali:latest
+  docker run --rm -v `pwd`:/pwd --privileged -it d33pi0/kali:nightly
 }
 
 function killdocker() {
