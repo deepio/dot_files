@@ -1,0 +1,12 @@
+[filter "lfs"]
+        process = git-lfs filter-process
+        required = true
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+[user]
+        name =
+        email = 
+[http]
+        postBuffer = 1048576000
+[alias]
+        history = log --pretty=format:'%C(cyan)%h%Cred%d %Creset%s%Cgreen [%cn]' --decorate
