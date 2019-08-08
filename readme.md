@@ -1,4 +1,4 @@
-# Dotfiles (Alex)
+# Dotfiles
 My OS X dotfiles.
 
 - Bash starts in folder `~/Documents/GitHub`, it is specified in the `.bash_profile` if you want to remove it.
