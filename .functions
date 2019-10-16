@@ -65,7 +65,7 @@ function runpy() {
   # Phasing out run in favor of entr.
   # EG:
   #   ls *.go | entr sh -c "go build; ./nanny"
-  ag -g py$ | entr bash -c "clear && python '$@'"
+  ag -g py$ | entr -c python "$@"
 }
 
 function startdt() {
