@@ -68,6 +68,10 @@ function runpy() {
   ag -g py$ | entr -c python "$@"
 }
 
+function rungo() {
+  ag -g go$ | entr -c go run "$@"
+}
+
 function startdt() {
   bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
 }
