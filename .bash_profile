@@ -6,6 +6,7 @@ export PATH=$PATH:/usr/local/opt/openssl/bin
 export PATH=$PATH:/usr/local/Cellar/openvpn/2.4.6/sbin
 export PATH=$PATH:/Applications/Wireshark.app/Contents/MacOS
 
+export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 # Stop homebrew autoupdate when installing a new package.
