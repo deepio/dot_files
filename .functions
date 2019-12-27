@@ -41,7 +41,7 @@ function http2ssh() {
 }
 
 function kali() {
-  CURRENT_FOLDER=`pwd`
+  CURRENT_FOLDER=`pwd | sed 's/ /\\ /g'`
   docker run --rm -v `echo $CURRENT_FOLDER`:/pwd --privileged -it d33pi0/kali:nightly
 }
 
