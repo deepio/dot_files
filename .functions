@@ -74,3 +74,8 @@ function rungo() {
 function startdt() {
   bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
 }
+
+function pomodoro() {
+  # meh, better than googling/installing a some free app from some place.
+  while true; do say "Beep Boop, start working"; sleep 1500; say "Boop, Take a break"; sleep 300; done
+}
