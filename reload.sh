@@ -23,4 +23,4 @@ sed -i "s/email =/email = `echo $gh_email`/g" ~/.gitconfig
 . ~/.functions
 
 # Update all brew packages, and cleanup old versions.
-brew upgrade
+# brew upgrade
