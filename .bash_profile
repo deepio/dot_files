@@ -1,4 +1,5 @@
 # Add `~/bin` to the `$PATH`
+export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH=$PATH:$HOME/.poetry/bin
 export PATH=$PATH:$HOME/Documents/GitHub/tools
 export PATH=$PATH:$(brew --prefix openvpn)/sbin
