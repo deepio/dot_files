@@ -3,6 +3,10 @@
 # Installs git, clang, ...
 xcode-select --install
 
+# Show "Allow running apps from anywhere"
+# Stop hiding options, seriously!
+sudo spctl --master-disable
+
 # Install Homebrew.
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
