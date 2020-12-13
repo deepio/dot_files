@@ -13,7 +13,7 @@ export PATH=$PATH:$GOBIN
 # Stop homebrew autoupdate when installing a new package.
 # Just add a Cronjob.
 # [TODO] Just how fragile are the xml launchd scripts anyway?
-export HOMEBREW_NO_AUTO_UPDATE="1";
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Ignore duplicate commands in the history
 export HISTCONTROL=ignoredups
