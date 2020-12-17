@@ -79,3 +79,52 @@ function pomodoro() {
   # meh, better than googling/installing a some free app from some place.
   while true; do say "Beep Boop, start working"; sleep 1500; say "Boop, Take a break"; sleep 300; done
 }
+
+function createpy() {
+  poetry new "$@"
+  cd "$@"
+  python3 -m venv env
+  source env/bin/activate
+
+  # Remove the email address from the toml file.
+  gsed -Ei "s/( <[a-zA-Z0-9.@_\-]+>)//" ./pyproject.toml
+
+  poetry add sphinx 
+  poetry add git+https://github.com/crossnox/m2r@dev
+
+  mkdir docs/
+  cd docs/
+
+  sphinx-quickstart  \
+    --no-sep \
+    -p "$@" \
+    -a deepio \
+    -r 0.0.1 \
+    -l en
+
+  # # Remove the old extensions... ?
+  # gsed -i "s/extensions\ \=\ \[//" ./conf.py 
+  # gsed -Ei "s/^]$//" ./conf.py 
+
+  # Using this method because it's more transparent, allowing others to read what's going on.
+  echo "" >> ./conf.py
+  echo "" >> ./conf.py
+  echo "" >> ./conf.py
+  echo "# -- Custom Options -------------------------------------------------" >> ./conf.py
+  echo "" >> ./conf.py
+  echo "import os" >> ./conf.py
+  echo "import subprocess" >> ./conf.py
+  echo "if os.environ.get('READTHEDOCS') == 'True':" >> ./conf.py
+  echo "  subprocess.check_output(['pip', 'install', 'm2r'])" >> ./conf.py
+  echo "" >> ./conf.py
+  echo "extensions = extensions + ['m2r', 'sphinx.ext.autodoc']" >> ./conf.py
+  echo "autosectionlabel_prefix_document = True" >> ./conf.py
+  echo "source_suffix = ['.md', '.rst']" >> ./conf.py
+  mv index.rst index.md
+
+  # RESET if you need it 
+  # rm -rf _* conf.py index.rst index.md make.bat Makefile
+
+  # Travel back.
+  cd ../..
+}
