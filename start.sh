@@ -49,6 +49,7 @@ gsed -i "s/env python/env python3/g" ~/poetry/get-poetry.py
 python3 ~/poetry/get-poetry.py
 brew install git-lfs
 git lfs install --system
+git config --global pull.ff only
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/v1.3.0/minikube-darwin-amd64 && chmod +x minikube && sudo cp minikube /usr/local/bin/ && rm minikube
 
 # Needed in Mac Sierra.
