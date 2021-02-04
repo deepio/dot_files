@@ -10,3 +10,5 @@
         postBuffer = 1048576000
 [alias]
         history = log --pretty=format:'%C(cyan)%h%Cred%d %Creset%s%Cgreen [%cn]' --decorate
+[push]
+        followTags = true
