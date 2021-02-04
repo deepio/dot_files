@@ -88,9 +88,10 @@ function createpy() {
 
   # Remove the email address from the toml file.
   gsed -Ei "s/( <[a-zA-Z0-9.@_\-]+>)//" ./pyproject.toml
-
-  poetry add sphinx 
-  poetry add git+https://github.com/crossnox/m2r@dev
+  pip install poetry
+  poetry add --dev sphinx 
+  poetry add --dev git+https://github.com/crossnox/m2r@dev
+  poetry add --dev coverage
 
   mkdir docs/
   cd docs/
@@ -124,7 +125,10 @@ function createpy() {
 
   # RESET if you need it 
   # rm -rf _* conf.py index.rst index.md make.bat Makefile
-
+	
+	cd ..
+  mv README.rst README.md
+	
   # Travel back.
-  cd ../..
+  cd ..
 }
