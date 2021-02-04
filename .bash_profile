@@ -10,6 +10,8 @@ export PATH=$PATH:/Applications/Wireshark.app/Contents/MacOS
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 # Stop homebrew autoupdate when installing a new package.
 # Just add a Cronjob.
 # [TODO] Just how fragile are the xml launchd scripts anyway?
