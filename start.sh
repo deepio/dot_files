@@ -4,7 +4,7 @@
 xcode-select --install
 
 # Show "Allow running apps from anywhere"
-# Stop hiding options, seriously!
+# Stop hiding options apple, seriously!
 sudo spctl --master-disable
 
 # Install Homebrew.
@@ -25,8 +25,7 @@ brew cask install keka
 # Install Tools.
 sudo chown -R "$(whoami)" /usr/local/lib/pkgconfig
 brew install openvpn
-brew install python@3
-brew install python@2
+brew install pyenv
 pip install virtualenv
 brew install netcat
 brew install findutils
@@ -41,16 +40,21 @@ brew install curl --with-openssl
 brew install wget
 brew install entr
 brew install ag
-cd ~/Documents/GitHub/ || return
+mkdir -p ~/Documents/GitHub
 git clone git@github.com:slimm609/checksec.sh.git
-git clone git@github.com:longld/peda.git ~/peda
+# git clone git@github.com:longld/peda.git ~/peda
+wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py \
+  && echo "source ~/.gdbinit-gef.py" >> ~/.gdbinit \
+  && echo "set disassembly-flavor intel" >> ~/.gdbinit
 git clone git@github.com:sdispater/poetry.git ~/poetry
-gsed -i "s/env python/env python3/g" ~/poetry/get-poetry.py
-python3 ~/poetry/get-poetry.py
+cd ~/poetry
+pyenv install 3.9.0
+pyenv local 3.9.0
+python ~/poetry/get-poetry.py
 brew install git-lfs
 git lfs install --system
 git config --global pull.ff only
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/v1.3.0/minikube-darwin-amd64 && chmod +x minikube && sudo cp minikube /usr/local/bin/ && rm minikube
+brew install minikube
 
 # Needed in Mac Sierra.
 brew install coreutils
@@ -68,6 +72,3 @@ sudo gem install artii lolcat
 # Setup bash settings.
 chmod +x ./reload.sh
 ./reload.sh
-
-# HOMEBREW_NO_INSTALL_CLEANUP=1
-# HOMEBREW_NO_ANALYTICS=1
