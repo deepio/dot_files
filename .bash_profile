@@ -16,6 +16,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 # Just add a Cronjob.
 # [TODO] Just how fragile are the xml launchd scripts anyway?
 export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_ANALYTICS=1
+# export HOMEBREW_NO_INSTALL_CLEANUP=1	
 
 # Ignore duplicate commands in the history
 export HISTCONTROL=ignoredups
