@@ -20,12 +20,14 @@ brew install google-chrome
 # Install Dev apps.
 brew install visual-studio-code
 brew install docker
+brew install minikube
+brew install iterm2
+brew install obsidian
+brew install amethyst
 
 # Install Misc.
 brew install vlc
 brew install keka
-brew install obsidian
-brew install amethyst
 
 # Install Tools.
 sudo chown -R "$(whoami)" /usr/local/lib/pkgconfig
@@ -59,7 +61,6 @@ python ~/poetry/get-poetry.py
 brew install git-lfs
 git lfs install --system
 git config --global pull.ff only
-brew install minikube
 
 # Needed in Mac Sierra.
 brew install coreutils
