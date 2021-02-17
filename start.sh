@@ -10,6 +10,9 @@ sudo spctl --master-disable
 # Install Homebrew.
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Install casks
+brew install homebrew/cask
+
 # Install Browsers.
 brew install FireFox
 brew install google-chrome
