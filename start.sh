@@ -24,6 +24,8 @@ brew install docker
 # Install Misc.
 brew install vlc
 brew install keka
+brew install obsidian
+brew install amethyst
 
 # Install Tools.
 sudo chown -R "$(whoami)" /usr/local/lib/pkgconfig
@@ -38,8 +40,8 @@ brew install openssl
 brew install autoconf
 brew install pygobject3
 brew install pstree
+brew install httpie
 brew install pypy3
-brew install curl --with-openssl
 brew install wget
 brew install entr
 brew install ag
