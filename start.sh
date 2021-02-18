@@ -81,6 +81,14 @@ defaults write com.apple.coreservices.uiagent CSUILastOSVersionWhereSafariRecomm
 # Colorful bash
 sudo gem install artii lolcat
 
+# Agnoster Fonts
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/powerline/fonts.git --depth=1 ~/Documents/fonts
+pushd ~/Documents/fonts
+./install.sh
+popd
+rm -rf ~/Documents/fonts
+
 # Setup bash settings.
 chmod +x ./reload.sh
 ./reload.sh
