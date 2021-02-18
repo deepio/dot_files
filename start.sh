@@ -66,6 +66,7 @@ python ~/poetry/get-poetry.py
 brew install git-lfs
 git lfs install --system
 git config --global pull.ff only
+brew install neofetch
 
 # Needed in Mac Sierra.
 brew install coreutils
