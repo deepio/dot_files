@@ -79,8 +79,8 @@ fi
 # Custom Aliases/Functions
 #######################################
 
-. $USER/.aliases
-. $USER/.functions
+. ~/.aliases
+. ~/.functions
 
 printf "$(artii -f shadow "Welcome, $(hostname -f | sed -e 's/.local//')")\n$(neofetch)" | lolcat
 
