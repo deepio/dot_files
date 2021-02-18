@@ -34,6 +34,7 @@ brew install ag
 brew install httpie
 brew install pypy3
 brew install gpg
+gpg --list-keys
 
 # Install Misc.
 brew install vlc

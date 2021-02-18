@@ -1,17 +1,8 @@
 #!/bin/sh
 
 # Copy files over.
-cp \
-  # SRC
-  ./.aliases \
-  # ./.bash_* \
-  ./.functions \
-  ./.vimrc \
-  ./.gdbinit \
-  ./.gitconfig \
-  ./zshrc \
-  # DST
-  ~/
+# there is a reason it's done this way.
+cp ./.aliases ~/ && cp ./.bash_* ~/ && cp ./.functions ~/ && cp ./.vimrc ~/ && cp ./.gdbinit ~/ && cp ./.gitconfig ~/ && ./.zshrc ~/
 
 cp ./gpg-agent.conf $HOME/.gnupg/
 
