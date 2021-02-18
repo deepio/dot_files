@@ -20,7 +20,7 @@ alias work="cd ~/Documents/GitHub"
 # Always use color output for `ls`
 # -A lists everything but . and ..
 # Using ${colorflag} instead of -G for GNU/macOS.
-alias ls="command ls -A ${colorflag}"
+alias ls="ls -A ${colorflag}"
 alias ll="ls -l"
 # List all files colorized in long format.
 alias la="ls -Foh"
@@ -28,8 +28,8 @@ alias la="ls -Foh"
 alias lt="ls -to"
 
 # Public IP addresses
-alias publicip="curl -v https://ipinfo.io/ip"
-alias localip="echo $(ipconfig getifaddr $(networksetup -listallhardwareports | awk '/Hardware Port: Wi-Fi/{getline; print $2}'))"
+alias pubip="http https://ipinfo.io/ip"
+alias loip="echo $(ipconfig getifaddr $(networksetup -listallhardwareports | awk '/Hardware Port: Wi-Fi/{getline; print $2}'))"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'

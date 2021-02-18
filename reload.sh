@@ -1,7 +1,19 @@
 #!/bin/sh
 
 # Copy files over.
-cp ./.aliases ~/ && cp ./.bash_* ~/ && cp ./.functions ~/ && cp ./.vimrc ~/ && cp ./.gdbinit ~/ && cp ./.gitconfig ~/
+cp \
+  # SRC
+  ./.aliases \
+  # ./.bash_* \
+  ./.functions \
+  ./.vimrc \
+  ./.gdbinit \
+  ./.gitconfig \
+  ./zshrc \
+  # DST
+  ~/
+
+cp ./gpg-agent.conf $HOME/.gnupg/
 
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -18,8 +30,9 @@ sed -i "s/email =/email = `echo $gh_email`/g" ~/.gitconfig
 
 # Refresh the settings.
 . ~/.aliases
-. ~/.bash_prompt
-. ~/.bash_profile
+# . ~/.bash_prompt
+# . ~/.bash_profile
+. ~/.zshrc
 . ~/.functions
 
 # Update all brew packages, and cleanup old versions.

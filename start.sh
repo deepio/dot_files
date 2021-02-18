@@ -18,12 +18,22 @@ brew install FireFox
 brew install google-chrome
 
 # Install Dev apps.
+# GUI
 brew install visual-studio-code
 brew install docker
 brew install minikube
 brew install iterm2
 brew install obsidian
 brew install amethyst
+# CLI
+brew install pyenv
+brew install direnv
+pip install virtualenv
+brew install entr
+brew install ag
+brew install httpie
+brew install pypy3
+brew install gpg
 
 # Install Misc.
 brew install vlc
@@ -32,8 +42,6 @@ brew install keka
 # Install Tools.
 sudo chown -R "$(whoami)" /usr/local/lib/pkgconfig
 brew install openvpn
-brew install pyenv
-pip install virtualenv
 brew install netcat
 brew install findutils
 brew install binutils
@@ -42,11 +50,7 @@ brew install openssl
 brew install autoconf
 brew install pygobject3
 brew install pstree
-brew install httpie
-brew install pypy3
 brew install wget
-brew install entr
-brew install ag
 mkdir -p ~/Documents/GitHub
 git clone git@github.com:slimm609/checksec.sh.git
 # git clone git@github.com:longld/peda.git ~/peda

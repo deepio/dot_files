@@ -76,7 +76,7 @@ function startdt() {
 }
 
 function pomodoro() {
-  # meh, better than googling/installing a some free app from some place.
+  # meh, better than googling/installing a some free app from some random place.
   while true; do say "Beep Boop, start working"; sleep 1500; say "Boop, Take a break"; sleep 300; done
 }
 
