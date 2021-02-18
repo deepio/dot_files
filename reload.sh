@@ -2,7 +2,7 @@
 
 # Copy files over.
 # there is a reason it's done this way.
-cp ./.aliases ~/ && cp ./.bash_* ~/ && cp ./.functions ~/ && cp ./.vimrc ~/ && cp ./.gdbinit ~/ && cp ./.gitconfig ~/ && ./.zshrc ~/
+cp ./.aliases ~/ && cp ./.bash_* ~/ && cp ./.functions ~/ && cp ./.vimrc ~/ && cp ./.gdbinit ~/ && cp ./.gitconfig ~/ && cp ./.zshrc ~/
 
 cp ./gpg-agent.conf $HOME/.gnupg/
 
