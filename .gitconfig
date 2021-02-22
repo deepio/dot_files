@@ -6,6 +6,7 @@
 [user]
         name =
         email = 
+        signingkey = 
 [http]
         postBuffer = 1048576000
 [alias]
