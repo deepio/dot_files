@@ -35,6 +35,10 @@ brew install httpie
 brew install pypy3
 brew install gpg
 gpg --list-keys
+# For Arc
+brew install php
+git clone https://github.com/phacility/arcanist.git ~/Documents/GitHub/
+git clone https://github.com/phacility/libphutil.git ~/Documents/GitHub/
 
 # Install Misc.
 brew install vlc

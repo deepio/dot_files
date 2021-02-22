@@ -7,8 +7,9 @@ export POETRY_BIN="$HOME/.poetry/bin"
 export CUSTOM_BIN="$HOME/Documents/GitHub/toolz/bin"
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
+export ARC_BIN="$HOME/Documents/GitHub/arcanist/bin/"
 
-export PATH="$PYENV_BIN:$POETRY_BIN:$CUSTOM_BIN:$PATH"
+export PATH="$PYENV_BIN:$POETRY_BIN:$CUSTOM_BIN:$ARC_BIN:$PATH"
 
 #######################################
 # Setup ZSH

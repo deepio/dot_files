@@ -6,6 +6,9 @@ export PATH=$PATH:$(brew --prefix openvpn)/sbin
 export PATH=$PATH:/usr/local/opt/openssl/bin
 export PATH=$PATH:/usr/local/Cellar/openvpn/2.4.6/sbin
 export PATH=$PATH:/Applications/Wireshark.app/Contents/MacOS
+export ARC_BIN=$PATH:/Users/xy/Documents/GitHub/arcanist/bin
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
