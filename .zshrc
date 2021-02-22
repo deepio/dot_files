@@ -77,6 +77,14 @@ if command -v direnv 1>/dev/null 2>&1; then
 fi
 
 #######################################
+# Setup PEW
+#######################################
+
+if command -v pew 1>/dev/null 2>&1; then
+	source "$(pew shell_config)"
+fi
+
+#######################################
 # Custom Aliases/Functions
 #######################################
 
