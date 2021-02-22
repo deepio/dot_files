@@ -11,5 +11,6 @@
         postBuffer = 1048576000
 [alias]
         history = log --pretty=format:'%C(cyan)%h%Cred%d %Creset%s%Cgreen [%cn]' --decorate
+        logs = log --show-signature
 [push]
         followTags = true
