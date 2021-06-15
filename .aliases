@@ -63,3 +63,6 @@ alias centos="docker run -p 5901:5901 -p 6901:6901 consol/centos-xfce-vnc"
 
 # Find short
 alias finda="find -maxdepth 1"
+
+# Global Date Format. I don't use any other date format.
+alias date="date +'%Y-%m-%d_%H:%M:%S'"
